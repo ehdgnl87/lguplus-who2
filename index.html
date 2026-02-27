@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LG유플러스 특판 사전예약</title>
+    <!-- 폰트: Noto Sans KR -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans KR"', 'sans-serif'],
+                    },
+                    colors: {
+                        'uplus-magenta': '#E6007E',
+                        'uplus-pastel': '#FCE4EC', // 연한 핑크 파스텔톤
+                        'uplus-gray': '#F8F9FA',   // 하단 정보 영역 연그레이
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #e5e7eb; }
+        /* 스크롤바 숨기기 (깔끔한 모바일 뷰) */
+        ::-webkit-scrollbar { display: none; }
+        .mobile-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            padding-bottom: 70px; /* 하단 고정 버튼 영역 확보 */
+        }
+    </style>
+</head>
+<body>
+
+<div class="mobile-container">
+
+    <!-- [섹션 1: 메인 히어로 배너 (S26 사전예약)] -->
+    <section class="bg-uplus-pastel pt-12 pb-14 px-5 text-center">
+        <div class="inline-block bg-black text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+            U+ 단독 특판 혜택
+        </div>
+        <h1 class="text-3xl font-black leading-tight text-black mb-6 word-keep-all">
+            <span class="text-uplus-magenta">갤럭시 S26 사전예약</span><br>압도적인 단독 혜택!
+        </h1>
+        
+        <!-- [이미지 삽입 영역 1] S26 단말기 이미지 -->
+        <div class="w-full bg-white rounded-2xl shadow-sm border border-pink-100 mb-8 overflow-hidden flex justify-center items-center aspect-video relative">
+            <img src="section1.jpg" alt="S26 기기 이미지" class="w-full h-full object-cover relative z-0 text-gray-400 text-sm">
+        </div>
+
+        <!-- 혜택 박스 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-left border border-pink-100">
+            <ul class="space-y-4">
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-black mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <span class="block font-bold text-lg text-black">더블스토리지 무상 업그레이드</span>
+                        <span class="block text-sm text-gray-500 mt-1">256GB ➔ 512GB (한정수량)</span>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-black mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <span class="block font-bold text-lg text-black">단말기 50% 즉시 할인</span>
+                        <span class="block text-sm text-gray-500 mt-1">부담 없는 기기값으로 개통</span>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-black mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <span class="block font-bold text-lg text-black">갤럭시 워치 + 탭 증정</span>
+                        <span class="block text-sm text-gray-500 mt-1">사전예약 고객 100% 전원 지급</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- [섹션 2: 유심/eSIM 번호이동 혜택] -->
+    <section class="bg-white py-14 px-5 text-center border-t-[12px] border-gray-200">
+        <h2 class="text-3xl font-black leading-tight text-black mb-2 word-keep-all">
+            기기변경 X<br><span class="text-uplus-magenta">지금 쓰던 폰 그대로</span>
+        </h2>
+        <p class="text-lg text-gray-600 font-bold mb-6">요금제 자유롭게 선택 가능</p>
+        
+        <!-- [이미지 삽입 영역 2] 유심/eSIM 혜택 이미지 -->
+        <div class="w-full bg-gray-50 rounded-2xl border border-gray-200 mb-6 overflow-hidden flex justify-center items-center aspect-video relative">
+            <img src="section2.jpg" alt="유심 혜택 이미지" class="w-full h-full object-cover relative z-0 text-gray-400 text-sm">
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+            <p class="text-gray-800 font-bold text-lg mb-2">유심/eSIM 번호이동 시</p>
+            <div class="text-uplus-magenta text-5xl font-black mb-2 tracking-tighter">
+                현금 10만 원
+            </div>
+            <p class="text-gray-800 font-bold text-xl">즉시 지급</p>
+        </div>
+    </section>
+
+    <!-- [섹션 3: 인터넷/TV 가입 혜택] -->
+    <section class="bg-uplus-gray py-14 px-5 border-t-[12px] border-gray-200">
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-black text-black mb-2">인터넷/TV 가입 시</h2>
+            <div class="text-uplus-magenta text-4xl font-black mb-4 tracking-tighter">
+                최대 70만 원 현금 지급
+            </div>
+            <p class="text-xl font-bold text-black bg-yellow-300 inline-block px-3 py-1">
+                요금은 ↓ 혜택은 ↑
+            </p>
+        </div>
+
+        <!-- [이미지 삽입 영역 3] 인터넷/TV 결합 이미지 -->
+        <div class="w-full bg-white rounded-2xl shadow-sm border border-gray-200 mb-8 overflow-hidden flex justify-center items-center aspect-video relative">
+            <img src="section3.jpg" alt="인터넷 TV 이미지" class="w-full h-full object-cover relative z-0 text-gray-400 text-sm">
+        </div>
+
+        <!-- 핵심 혜택 박스 (기존 비교표 대체) -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 text-left mb-6">
+            <h3 class="font-black text-lg text-black mb-4 border-b border-gray-100 pb-3">U+ 인터넷 / TV 핵심 혜택</h3>
+            <ul class="space-y-4">
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-uplus-magenta mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <span class="block font-bold text-base text-black">프리미엄 기가 와이파이 2대</span>
+                        <span class="block text-sm text-gray-500 mt-1">집안 어디서나 사각지대 없는 완벽한 무선망</span>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-uplus-magenta mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <span class="block font-bold text-base text-black">OTT 시청 최적화 환경</span>
+                        <span class="block text-sm text-gray-500 mt-1">넷플릭스,디즈니,유튜브 등 끊김 없는 OTT 고화질 시청</span>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-uplus-magenta mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <span class="block font-bold text-base text-black">아이들나라 탑재</span>
+                        <span class="block text-sm text-gray-500 mt-1">우리 아이를 위한 No.1 키즈 전용 콘텐츠</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 유의사항 -->
+        <div class="text-[11px] text-gray-400 leading-tight space-y-1 mt-6 px-2">
+            <p>※ 기간 : 2026년 2월 27일 ~ 사은품 소진 시 조기 종료</p>
+            <p>※ 개통 요금제 및 결합 상품 종류에 따라 지급되는 혜택 금액이 상이할 수 있습니다.</p>
+            <p>※ 기기변경/신규가입/번호이동 등 가입 유형에 따라 사은품이 다르게 적용됩니다.</p>
+        </div>
+    </section>
+
+    <!-- [섹션 4: 고객센터 및 푸터(Footer)] -->
+    <footer class="bg-white pt-10 pb-12 px-5 border-t-[12px] border-gray-200">
+        <!-- 강조된 연락처 박스 -->
+        <div class="bg-pink-50 border border-pink-200 rounded-2xl p-6 text-center mb-6 shadow-sm">
+            <p class="text-sm font-bold text-uplus-magenta mb-1">LG유플러스 공식 인증 대리점</p>
+            <h3 class="text-xl font-black text-black mb-1">(주)후(WHO)</h3>
+            <p class="text-gray-700 font-medium mb-4">담당자 : <span class="font-bold text-black">강동희 매니저</span></p>
+            
+            <a id="phone-link" href="#" class="inline-flex items-center justify-center bg-white border border-gray-200 rounded-full py-3 px-6 w-full shadow-sm mb-2">
+                <svg class="w-5 h-5 text-uplus-magenta mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                <span id="phone-text" class="text-2xl font-black text-black tracking-tight"></span>
+            </a>
+            <p class="text-xs text-gray-500 mt-2">터치하시면 바로 전화 연결됩니다.</p>
+        </div>
+
+        <!-- 하단 법적 고지 및 정보 -->
+        <div class="text-xs text-gray-400 font-medium leading-relaxed text-center">
+            <p>Copyright © Uplus Special Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- [최종 CTA 하단 고정 버튼] -->
+    <div class="fixed bottom-0 left-0 right-0 max-w-[480px] mx-auto w-full flex bg-white border-t border-gray-200 z-50">
+        <button onclick="openNaverPlace()" class="w-1/2 py-4 bg-white text-black font-bold text-base flex justify-center items-center">
+            <!-- 네이버 로고 마크 -->
+            <svg class="w-5 h-5 mr-1.5" viewBox="0 0 24 24" fill="#03C75A">
+                <rect width="24" height="24" rx="4"></rect>
+                <path d="M16 16.5h-2.3v-5.2l-4.1 5.2H7.5v-9h2.3v5.2l4.1-5.2H16v9z" fill="#ffffff"></path>
+            </svg>
+            대리점 위치
+        </button>
+        <button onclick="openSmsInquiry()" class="w-1/2 py-4 bg-uplus-magenta text-white font-bold text-base flex justify-center items-center shadow-inner">
+            <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+            문자 상담하기
+        </button>
+    </div>
+
+</div>
+
+<script>
+    // 📌 [설정 1] 대리점 네이버 플레이스 URL을 아래에 입력해 주세요.
+    const naverPlaceUrl = "https://map.naver.com/p/entry/place/1832798936?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=128.6962830&lat=35.8633961&c=15.00,0,0,0,dh";
+
+    // 📌 [설정 2] 담당자 연락처를 아래에 입력해 주세요. (하이픈 포함)
+    const agentPhoneNumber = "010-8383-1446";
+
+    // 페이지 로드 시 연락처를 화면과 전화걸기 링크에 자동 적용
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("phone-link").href = "tel:" + agentPhoneNumber;
+        document.getElementById("phone-text").innerText = agentPhoneNumber;
+    });
+
+    // 대리점 위치 (네이버 플레이스) 열기 함수
+    function openNaverPlace() {
+        window.open(naverPlaceUrl, '_blank');
+    }
+
+    // 섹션 4 - CTA 버튼 로직 (문자 상담)
+    function openSmsInquiry() {
+        // 1. 팝업 노출
+        alert("문자 남기시면 친절하고 빠르게 연락드리겠습니다!");
+        
+        // 2. 담당자 번호 세팅 (변수에서 가져와 하이픈 자동 제거)
+        const phoneNumber = agentPhoneNumber.replace(/-/g, ""); 
+        
+        // 3. 문자 양식 세팅 및 URL 인코딩
+        const smsBody = "LGU+특판 상담 문의입니다.\n①통신사: \n②문의내용: ";
+        const encodedBody = encodeURIComponent(smsBody);
+        
+        // 4. 모바일 기기(iOS/Android) 판별 후 문자 앱 호출 분기 처리
+        const userAgent = navigator.userAgent.toLowerCase();
+        
+        if (userAgent.indexOf("iphone") > -1 || userAgent.indexOf("ipad") > -1) {
+            // iOS 계열
+            window.location.href = "sms:" + phoneNumber + "&body=" + encodedBody;
+        } else {
+            // 안드로이드 및 기타
+            window.location.href = "sms:" + phoneNumber + "?body=" + encodedBody;
+        }
+    }
+</script>
+
+</body>
+</html>
